@@ -1,4 +1,4 @@
 {
   "useLegacyWorkflow": false,
-  "webpackConfigPath": "./react-nativescript.webpack.config.js"
+  "webpackConfigPath": "./crank-native.webpack.config.js"
 }
