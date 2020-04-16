@@ -1,7 +1,13 @@
-import 'react-hot-loader'; // Must be imported before React and ReactNativeScript.
-import * as React from "react";
+import './tslib.nativescript'; // For async/await support
 
-/* Controls react-nativescript log verbosity. true: all logs; false: only error logs. */
+declare global {
+    const global: any;
+}
+
+/** 
+ * Controls crank-nativescript log verbosity.
+ * true: all logs; false: only error logs.
+ */
 Object.defineProperty(global, '__DEV__', { value: false });
 import * as ReactNativeScript from "react-nativescript";
 import AppContainer from "./components/AppContainer";
