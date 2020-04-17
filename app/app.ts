@@ -13,5 +13,5 @@ start(
         AppContainer,
         {},
         null
-    )
+    ) as any // FIXME: improve the typings here.
 );
