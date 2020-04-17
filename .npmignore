@@ -5,6 +5,7 @@ npm-debug.log
 *.js
 !crank-native.webpack.config.js
 hooks/*
+!hooks/after-createProject/
 !hooks/after-createProject/after-createProject.js
 lib/
 node_modules/
