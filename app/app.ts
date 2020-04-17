@@ -1,5 +1,3 @@
-import './tslib.nativescript'; // For async/await support
-
 /** 
  * Controls crank-nativescript log verbosity.
  * true: all logs; false: only error logs.
