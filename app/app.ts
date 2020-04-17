@@ -1,9 +1,5 @@
 import './tslib.nativescript'; // For async/await support
 
-declare global {
-    const global: any;
-}
-
 /** 
  * Controls crank-nativescript log verbosity.
  * true: all logs; false: only error logs.
