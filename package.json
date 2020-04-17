@@ -1,6 +1,6 @@
 {
   "name": "tns-template-blank-crank",
-  "version": "6.5.0",
+  "version": "6.5.1",
   "nativescript": {
     "id": "org.nativescript.Blank",
     "tns-android": {
