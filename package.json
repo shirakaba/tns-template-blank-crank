@@ -1,6 +1,6 @@
 {
-  "name": "tns-template-blank-react",
-  "version": "6.5.1",
+  "name": "tns-template-blank-crank",
+  "version": "6.5.0",
   "nativescript": {
     "id": "org.nativescript.Blank",
     "tns-android": {
@@ -11,44 +11,39 @@
     },
     "templateVersion": "v2"
   },
-  "description": "Blank template for NativeScript apps using React.",
+  "description": "Blank template for NativeScript apps using Crank.",
   "author": "Jamie Birch <14055146+shirakaba@users.noreply.github.com>",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/shirakaba/tns-template-blank-react.git"
+    "url": "https://github.com/shirakaba/tns-template-blank-crank.git"
   },
-  "homepage": "https://github.com/shirakaba/tns-template-blank-react",
+  "homepage": "https://github.com/shirakaba/tns-template-blank-crank",
   "bugs": {
-    "url": "https://github.com/shirakaba/tns-template-blank-react/issues"
+    "url": "https://github.com/shirakaba/tns-template-blank-crank/issues"
   },
   "keywords": [
     "mobile",
     "nativescript",
     "{N}",
     "tns",
-    "react",
-    "react-nativescript",
+    "crank",
+    "crank-native",
     "template"
   ],
   "dependencies": {
+    "@bikeshaving/crank": "^0.1.0",
     "@nativescript/theme": "2.2.1",
-    "react": "^16.9.0",
-    "react-nativescript": "^0.23.0",
+    "crank-native": ">=0.1.0-alpha.0",
     "tns-core-modules": "~6.5.0"
   },
   "devDependencies": {
-    "@babel/core": "~7.5.5",
-    "@babel/plugin-proposal-class-properties": "~7.5.5",
-    "@babel/preset-react": "~7.0.0",
-    "@types/react": "~16.9.2",
     "awesome-typescript-loader": "~5.2.1",
     "babel-loader": "~8.0.6",
     "fork-ts-checker-webpack-plugin": "~1.5.0",
     "nativescript-dev-webpack": "~1.5.0",
     "node-sass": "~4.12.0",
-    "react-hot-loader": "~4.12.13",
-    "typescript": "~3.5.3"
+    "typescript": "^3.8.3"
   },
   "gitHead": "1350d382fb4b0ed4c6e9685df909518b2688e004",
   "readme": "NativeScript Application"

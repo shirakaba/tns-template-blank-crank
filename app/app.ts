@@ -9,19 +9,15 @@ declare global {
  * true: all logs; false: only error logs.
  */
 Object.defineProperty(global, '__DEV__', { value: false });
-import * as ReactNativeScript from "react-nativescript";
+
+import { start } from "crank-native";
+import { createElement } from "@bikeshaving/crank";
 import AppContainer from "./components/AppContainer";
 
-export const rootRef: React.RefObject<any> = React.createRef<any>();
-
-ReactNativeScript.start(
-    React.createElement(
+start(
+    createElement(
         AppContainer,
-        {
-            forwardedRef: rootRef
-        },
+        {},
         null
-    ),
-    /* This ref MUST match the ref that you pass into the base component of your app container. */
-    rootRef
+    )
 );
