@@ -9,7 +9,7 @@ export default function Greeting({name="World"}) {
             width={{ value: 100, unit: "%" }}
             height={{ value: 100, unit: "%" }}
         >
-            <label>Hello {name}</label>
+            <label fontSize={48} paddingLeft={16}>Hello {name}</label>
         </contentView>
     );
 }
