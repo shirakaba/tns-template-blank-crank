@@ -12,44 +12,42 @@ interface Props {
 export default function Greeting({ name = "World", rootView }: Props) {
     console.log(`AppContainer got rootView:`, rootView);
     return (
-        <page>
-            <gridLayout
-                width={{ value: 100, unit: "%" }}
-                height={{ value: 100, unit: "%" }}
-                rows={[
-                    new ItemSpec(1, "star"),
-                    new ItemSpec(1, "auto"),
-                    new ItemSpec(1, "auto"),
-                    new ItemSpec(1, "star"),
-                ]}
-                columns={[
-                    new ItemSpec(1, "star"),
-                    new ItemSpec(200, "pixel"),
-                    new ItemSpec(1, "star"),
-                ]}
+        <gridLayout
+            width={{ value: 100, unit: "%" }}
+            height={{ value: 100, unit: "%" }}
+            rows={[
+                new ItemSpec(1, "star"),
+                new ItemSpec(1, "auto"),
+                new ItemSpec(1, "auto"),
+                new ItemSpec(1, "star"),
+            ]}
+            columns={[
+                new ItemSpec(1, "star"),
+                new ItemSpec(200, "pixel"),
+                new ItemSpec(1, "star"),
+            ]}
+        >
+            <label
+                row={1}
+                col={1}
+                className="info"
+                textAlignment={"center"}
+                fontSize={24}
             >
-                <label
-                    row={1}
-                    col={1}
-                    className="info"
-                    textAlignment={"center"}
-                    fontSize={24}
-                >
-                    <formattedString>
-                        <span className="fas" text="&#xf135;"/>
-                        <span> Hello {name}</span>
-                    </formattedString>
-                </label>
-                <button
-                    row={2}
-                    col={1}
-                    fontSize={24}
-                    textAlignment={"center"}
-                    onTap={() => alert("Tap received!")}
-                >
-                    Tap me
-                </button>
-            </gridLayout>
-        </page>
+                <formattedString>
+                    <span className="fas" text="&#xf135;"/>
+                    <span> Hello {name}</span>
+                </formattedString>
+            </label>
+            <button
+                row={2}
+                col={1}
+                fontSize={24}
+                textAlignment={"center"}
+                onTap={() => alert("Tap received!")}
+            >
+                Tap me
+            </button>
+        </gridLayout>
     );
 }
