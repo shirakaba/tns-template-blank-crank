@@ -34,7 +34,7 @@
   "dependencies": {
     "@bikeshaving/crank": "^0.1.0",
     "@nativescript/theme": "2.2.1",
-    "crank-native": "^0.2.0",
+    "crank-native": "^0.6.0",
     "event-target-shim": "^5.0.1",
     "tns-core-modules": "~6.5.0"
   },
